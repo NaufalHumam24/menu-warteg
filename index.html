@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Tegal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap">
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        .header-title { font-family: 'Great Vibes', cursive; }
+        .slideshow { animation: slideshow 15s infinite; background-size: cover; background-position: center top; }
+        @keyframes slideshow {
+            0%, 33% { background-image: url("image/main_1.jpg"); }
+            34%, 66% { background-image: url("image/main_2.jpg"); }
+            67%, 100% { background-image: url("image/main_3.jpg"); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <img alt="Logo" class="h-12" height="50" src="image/logo.png" width="150"/>
+            <nav class="space-x-8">
+                <a class="text-gray-700 hover:text-yellow-400" href="#">Home</a>
+                <a class="text-gray-700 hover:text-yellow-400" href="#">Tentang Kami</a>
+                <a class="text-gray-700 hover:text-yellow-400" href="#">Menu</a>
+                <a class="text-gray-700 hover:text-yellow-400" href="#">Delivery Order</a>
+                <a class="text-gray-700 hover:text-yellow-400" href="#">Ala Carte</a>
+            </nav>
+            <button class="bg-yellow-400 text-white px-4 py-2 rounded">Hubungi Kami</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center slideshow"></div>
+        <div class="relative z-10">
+            <h1 class="header-title text-8xl font-bold text-yellow-400">Warung Tegal</h1>
+            <p class="text-4xl font-bold mt-4">Cita Rasa Rumahan, Harga Bersahabat</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 p-4">
+                <img alt="Restoran Garuda Building" height="500" src="image/main_4.png" width="500">
+            </div>
+            <div class="md:w-1/2 p-4">
+                <h2 class="header-title text-6xl font-bold text-yellow-400 mb-4">Warung Tegal</h2>
+                <p class="text-lg text-gray-700">Warung Tegal, atau warteg, adalah ikon kuliner khas Indonesia yang menyajikan makanan sederhana dengan harga terjangkau dan cita rasa rumahan. Berasal dari Tegal, Jawa Tengah, warteg menawarkan konsep prasmanan di mana pelanggan dapat memilih sendiri berbagai menu makanannya. Keberadaannya yang tersebar di berbagai kota menjadikannya pilihan favorit bagi pekerja, mahasiswa, dan masyarakat umum yang mencari makanan praktis, lezat, dan ekonomis. Kini, warteg telah berinovasi dengan layanan pesan antar dan konsep modern tanpa menghilangkan kehangatan serta nilai tradisionalnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-gray-50 text-center py-16">
+        <div class="container mx-auto">
+            <h2 class="header-title text-6xl font-bold text-yellow-400 mb-12">Layanan Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+                <div>
+                    <img src="https://img.icons8.com/nolan/96/purchase-order.png" alt="Delivery Order" class="w-24 mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Delivery Order</h3>
+                    <p class="text-lg text-gray-700">Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 10 KM</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/nolan/96/wish-list.png" alt="Ala Carte" class="w-24 mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Ala Carte</h3>
+                    <p class="text-lg text-gray-700">Menikmati hidangan kami langsung di rumah/kantor Anda. Minimal order Rp500,000.-</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/nolan/96/natural-food.png" alt="Prasmanan" class="w-24 mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-yellow-400 mb-4">Prasmanan</h3>
+                    <p class="text-lg text-gray-700">Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="bg-white text-center py-16">
+        <div class="container mx-auto">
+            <h2 class="header-title text-6xl font-bold text-yellow-400 mb-12">Menu Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 mt-8">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Tumis Kangkung" class="w-full h-48 object-cover" src="image/menu_1.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Tumis Kangkung</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Oseng Kacang" class="w-full h-48 object-cover" src="image/menu_2.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Oseng Kacang</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Tempe Orek" class="w-full h-48 object-cover" src="image/menu_3.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Tempe Orek</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Telur Balado" class="w-full h-48 object-cover" src="image/menu_4.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Telur Balado</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Ikan Tongkol" class="w-full h-48 object-cover" src="image/menu_5.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Ikan Tongkol</h3>
+                        <p class="text-lg text-gray-700">Rp 10.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Ikan Pindang" class="w-full h-48 object-cover" src="image/menu_6.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Ikan Pindang</h3>
+                        <p class="text-lg text-gray-700">Rp 10.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Perkedel Kentang" class="w-full h-48 object-cover" src="image/menu_7.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Perkedel Kentang</h3>
+                        <p class="text-lg text-gray-700">Rp 3.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Sayur Lodeh" class="w-full h-48 object-cover" src="image/menu_8.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Sayur Lodeh</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img alt="Sayur Asem" class="w-full h-48 object-cover" src="image/menu_9.jpg"/>
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Sayur Asem</h3>
+                        <p class="text-lg text-gray-700">Rp 6.000</p>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded mt-2">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="bg-gray-50 text-center py-16">
+        <div class="container mx-auto">
+            <h2 class="header-title text-6xl font-bold text-yellow-400 mb-12">Cabang</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-6 mt-8">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image/cabang_1.webp" alt="Kota Medan" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Jakarta</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image/cabang_2.webp" alt="Jakarta" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Bandung</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image/cabang_3.webp" alt="Lampung" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Yogyakarta</h3>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="image/cabang_4.webp" alt="Pekanbaru" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold text-gray-700">Surabaya</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+            <div>
+                <h3 class="text-xl font-bold mb-8">Warung Tegal</h3>
+                <p class="mb-4">Warung Tegal, atau warteg, yang menjadi salah satu ikon kuliner khas Indonesia yang menyajikan makanan sederhana dengan harga terjangkau dan cita rasa rumahan.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-8">Open Hours</h3>
+                <ul class="space-y-1">
+                    <li>Senin - Minggu: 7:00 - 22:00</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-8">Newsletter</h3>
+                <p class="mb-4">Dapatkan informasi dan promo terbaru dari kami.</p>
+                <form>
+                    <input type="email" placeholder="Enter email address" class="w-full p-2 mb-4 rounded bg-gray-800 text-white border-none">
+                    <button class="w-full bg-yellow-400 text-black py-2 rounded font-bold">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 mt-8 text-sm">
+            <p>copyright &copy;2025 <span class="font-bold text-white">Warung Tegal</span> - All rights reserved.</p>
+            <p>thanks for freepik & colorlib</p>
+        </div>
+    </footer>
+</body>
+</html>
